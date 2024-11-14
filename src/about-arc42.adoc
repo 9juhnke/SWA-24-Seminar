@@ -1,0 +1,15 @@
+:homepage: https://arc42.org
+
+:keywords: software-architecture, documentation, arc42
+
+:numbered!:
+
+[role="lead"]
+Dokumentation der Software- und Systemarchitektur
+
+Version {revnumber}. {revremark}, {revdate}
+
+Autor(en): 9juhnke
+
+Basiert auf https://arc42.org.
+

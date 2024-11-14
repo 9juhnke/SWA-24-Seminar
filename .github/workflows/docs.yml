@@ -10,21 +10,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       
-      - name: Install Asciidoctor
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y asciidoctor ruby-asciidoctor-pdf
-          
-      - name: Create dist directory
-        run: mkdir -p dist
-          
       - name: Build PDF
         run: |
-          asciidoctor-pdf src/index.adoc -o dist/documentation.pdf
+          sudo apt-get update && sudo apt-get install -y asciidoctor ruby-asciidoctor-pdf
+          asciidoctor-pdf src/index.adoc -o documentation.pdf
           
       - name: Upload PDF artifact
         uses: actions/upload-artifact@v4
         with:
           name: documentation-pdf
-          path: dist/documentation.pdf
+          path: documentation.pdf
           retention-days: 90

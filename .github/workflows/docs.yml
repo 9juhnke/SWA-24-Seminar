@@ -3,13 +3,6 @@ name: Documentation
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
 
 jobs:
   build:
@@ -22,36 +15,16 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y asciidoctor ruby-asciidoctor-pdf
           
-      - name: Install PlantUML
-        run: |
-          sudo apt-get install -y plantuml
-          
       - name: Create dist directory
         run: mkdir -p dist
-          
-      - name: Build HTML
-        run: |
-          asciidoctor src/index.adoc -o dist/index.html
           
       - name: Build PDF
         run: |
           asciidoctor-pdf src/index.adoc -o dist/documentation.pdf
           
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-        
-      - name: Upload pages artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: 'dist'
-          
-      - name: Deploy to GitHub Pages
-        if: github.ref == 'refs/heads/main'
-        id: deployment
-        uses: actions/deploy-pages@v3
-
       - name: Upload PDF artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: documentation-pdf
           path: dist/documentation.pdf
+          retention-days: 90

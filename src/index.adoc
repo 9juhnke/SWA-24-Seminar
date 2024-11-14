@@ -1,16 +1,17 @@
+ifndef::imagesdir[:imagesdir: ../images]
 = TravelHub - Next Generation Trip Management Dashboard
-= image:th-logo.png[TravelHub]
 // configure DE settings for asciidoc
 :doctype: book
 :title-page:
 :toc:
 include::config.adoc[]
+
 :revnumber: 1.0
 :revdate: November 2024
 :revremark: (AsciiDoc)
 // toc-title definition MUST follow document title without blank line!
 :toc-title: Inhaltsverzeichnis
-
+image:th_logo.png[TravelHub]
 //additional style for arc42 help callouts
 ifdef::backend-html5[]
 ++++

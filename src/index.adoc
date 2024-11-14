@@ -1,10 +1,10 @@
 = TravelHub - Next Generation Trip Management Dashboard
+= image:th-logo.png[TravelHub]
 // configure DE settings for asciidoc
 :doctype: book
 :title-page:
 :toc:
 include::config.adoc[]
-//= image:arc42-logo.png[arc42]
 :revnumber: 1.0
 :revdate: November 2024
 :revremark: (AsciiDoc)

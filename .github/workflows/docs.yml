@@ -1,23 +1,27 @@
 name: Documentation
 
 on:
-  push:
-    branches: [ "main" ]
+ push:
+   branches: [ "main" ]
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      
-      - name: Build PDF
-        run: |
-          sudo apt-get update && sudo apt-get install -y asciidoctor ruby-asciidoctor-pdf
-          asciidoctor-pdf src/index.adoc -o documentation.pdf
-          
-      - name: Upload PDF artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: documentation-pdf
-          path: documentation.pdf
-          retention-days: 90
+ build:
+   runs-on: ubuntu-latest
+   permissions:
+     contents: write
+   steps:
+     - uses: actions/checkout@v4
+     
+     - name: Build PDF
+       run: |
+         sudo apt-get update && sudo apt-get install -y asciidoctor ruby-asciidoctor-pdf
+         asciidoctor-pdf src/index.adoc -o documentation.pdf
+         
+     - name: Release
+       uses: softprops/action-gh-release@v2
+       with:
+         files: documentation.pdf
+         name: "Latest Documentation" 
+         tag_name: latest
+         body: "Automatically generated documentation"
+         fail_on_unmatched_files: true

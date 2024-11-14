@@ -41,7 +41,7 @@ jobs:
         uses: actions/configure-pages@v4
         
       - name: Upload pages artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
           path: 'dist'
           
@@ -51,7 +51,7 @@ jobs:
         uses: actions/deploy-pages@v3
 
       - name: Upload PDF artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: documentation-pdf
           path: dist/documentation.pdf

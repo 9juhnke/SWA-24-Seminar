@@ -3,6 +3,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 [[section-introduction-and-goals]]
 ==	Einführung und Ziele
 
+
 === Aufgabenstellung
 
 TravelHub ist ein modernes Online-Reise-Management-Dashboard für eine große Reiseagentur. Das System ermöglicht Reisenden, alle ihre bestehenden Reservierungen online oder über mobile Geräte einzusehen und zu verwalten.
@@ -16,6 +17,33 @@ Kernfunktionen:
 * Integration mit sozialen Medien zum Teilen von Reiseinformationen
 * Plattformübergreifende Benutzeroberfläche
 
+
+=== Produktkarton: TravelHub
+
+Vorderseite: 
+
+*TravelHub - Ihr persönlicher Reise-Assistent* +
+_Alle Ihre Reisen. Ein Dashboard. Überall verfügbar._
+
+Rückseite:
+
+*Was ist TravelHub?* +
+TravelHub ist Ihr digitales Reise-Cockpit, das alle Ihre Reisebuchungen intelligent zusammenführt. Egal ob Geschäftsreise oder Urlaub – behalten Sie stets den Überblick über Ihre Flüge, Hotels und Mietwagen.
+
+*Hauptfunktionen:*
+
+* Automatische Synchronisation mit Ihren Vielflieger-, Hotel- und Mietwagenkonten
+* Intelligente Gruppierung Ihrer Buchungen nach Reisen
+* Teilen Sie Ihre Reisepläne in sozialen Medien
+* Verfügbar auf allen Ihren Geräten
+
+*Für wen ist TravelHub?*
+
+* Vielreisende, die den Überblick behalten möchten
+* Geschäftsreisende mit komplexen Reiseplänen
+* Urlauber, die ihre Reisedaten zentral verwalten möchten
+
+
 === Qualitätsziele
 
 . Benutzerfreundlichkeit: Optimale Benutzererfahrung auf allen Plattformen
@@ -24,6 +52,52 @@ Kernfunktionen:
 . Skalierbarkeit: Unterstützung von 10.000+ weltweiten Nutzern
 . Internationalisierung: Weltweite Nutzbarkeit
 . Zuverlässigkeit: Verlässliche Synchronisation von Reservierungsdaten
+
+
+=== Personas
+
+*Sarah Chen - die internationale Geschäftsreisende*
+
+* 42 Jahre, Senior Consultant
+* reist 2-3 Mal pro Monat geschäftlich
+* hat mehrere Vielflieger- und Hotelkonten
+* *Hauptbedürfnisse:*
+ ** schneller Überblick über kommende Reisen
+ ** automatische Integration aller Buchungen
+ ** mobile Verfügbarkeit aller Reisedaten
+* *Frustrationen:*
+ ** verpasste Statusvorteile durch unkoordinierte Buchungen
+ ** zeitaufwändige manuelle Verwaltung verschiedener Accounts
+ ** Probleme bei kurzfristigen Änderungen
+
+*Marcus Weber - der organisierte Familienreisende*
+
+* 35 Jahre, Projektmanager
+* plant mehrere Familienurlaube pro Jahr
+* teilt Reisepläne gerne mit Familie und Freunden
+* *Hauptbedürfnisse:*
+ ** übersichtliche Darstellung aller Familienbuchungen
+ ** einfaches Teilen der Reisepläne
+ ** manuelle Eingabe zusätzlicher Aktivitäten
+* *Frustrationen:*
+ ** unübersichtliche Sammlung von Buchungsbestätigungen
+ ** schwierige Koordination mit Familienangehörigen
+ ** Verlust des Überblicks bei komplexen Reiseplänen
+
+*Emma Schmidt - die spontane Weltenbummlerin*
+
+* 28 Jahre, freiberufliche Fotografin
+* reist häufig und flexibel
+* nutzt verschiedene Buchungsplattformen
+* *Hauptbedürfnisse:*
+  ** flexible Integration verschiedener Buchungsquellen
+  ** schnelle manuelle Eingabe von Last-Minute-Buchungen
+  ** internationale Nutzbarkeit
+* *Frustrationen:*
+  ** unübersichtliche Mix aus verschiedenen Buchungsplattformen
+  ** Probleme bei der Nutzung im Ausland
+  ** fehlendes Gesamtbild ihrer Reiseaktivitäten
+
 
 === Stakeholder
 

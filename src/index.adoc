@@ -11,7 +11,7 @@ include::config.adoc[]
 :revremark: (AsciiDoc)
 // toc-title definition MUST follow document title without blank line!
 :toc-title: Inhaltsverzeichnis
-image:th_logo.png[TravelHub]
+image:th_logo.png[TravelHub, width=150]
 //additional style for arc42 help callouts
 ifdef::backend-html5[]
 ++++
